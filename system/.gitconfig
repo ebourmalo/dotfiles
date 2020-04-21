@@ -1,0 +1,25 @@
+[merge]
+    log = true
+    ff = false
+
+[push]
+    default = simple
+
+[url "https://bitbucket.org/"]
+    insteadOf = bb:
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+
+[user]
+    name = Emmanuel Bourmalo
+    email = emmanuel.bourmalo@gmail.com
+
+[credential]
+    helper = osxkeychain
+
+[color]
+    ui = true

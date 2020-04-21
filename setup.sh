@@ -40,6 +40,7 @@ source ~/.zshrc
 echo "> Configuring dev environment (Vscode, npm packages) [6/8]"
 source install/Codefile
 npm install -g $(cat install/npmfile)
+ln -sv ./system/.gitconfig ~
 
 echo "> Setup nice font for iterm and vscode [7/8]"
 # update iTerm2 config

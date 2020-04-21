@@ -24,6 +24,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "iterm2"
 cask "alfred"
+cask "gpg-suite"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 cask "qlcolorcode"
