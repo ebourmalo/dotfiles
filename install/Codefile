@@ -1,0 +1,5 @@
+code --install-extension esbenp.prettier-vscode
+code --install-extension peterjausovec.vscode-docker
+code --install-extension sharat.vscode-brewfile
+code --install-extension teabyii.ayu
+code --install-extension ms-python.python
