@@ -1,1 +1,34 @@
-/Users/manu/.gitconfig
+[merge]
+    log = true
+    ff = false
+
+[core]
+    symlinks = true
+
+[push]
+    default = simple
+
+[url "https://bitbucket.org/"]
+    insteadOf = bb:
+
+[url "https://github.com/"]
+    insteadOf = gh:
+
+[url "https://gist.github.com/"]
+    insteadOf = gist:
+
+[user]
+    name = Emmanuel Bourmalo
+    email = emmanuel.bourmalo@gmail.com
+	signingkey = 474481D4D56A9E6F
+
+[credential]
+    helper = osxkeychain
+
+[color]
+    ui = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true

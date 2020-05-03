@@ -1,6 +1,7 @@
 HOMEDIR=${ZDOTDIR:-$HOME}
 
 source $HOMEDIR/.env
+source $HOMEDIR/.alias
 
 # Source Prezto.
 if [[ -s "$HOMEDIR/.zprezto/init.zsh" ]]; then
@@ -8,3 +9,6 @@ if [[ -s "$HOMEDIR/.zprezto/init.zsh" ]]; then
 fi
 
 zstyle ':prompt:pure:prompt:success' color yellow
+
+# shell completions for alacritty
+fpath+=$HOMEDIR/.zsh_functions

@@ -1,5 +1,8 @@
-code --install-extension esbenp.prettier-vscode
-code --install-extension peterjausovec.vscode-docker
-code --install-extension sharat.vscode-brewfile
 code --install-extension teabyii.ayu
 code --install-extension ms-python.python
+code --install-extension mohsen1.prettify-json
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension dotiful.dotfiles-syntax-highlighting
+code --install-extension peterjausovec.vscode-docker
+code --install-extension sharat.vscode-brewfile
