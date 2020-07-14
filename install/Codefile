@@ -6,3 +6,5 @@ code --install-extension dbaeumer.vscode-eslint
 code --install-extension dotiful.dotfiles-syntax-highlighting
 code --install-extension peterjausovec.vscode-docker
 code --install-extension sharat.vscode-brewfile
+code --install-extension alefragnani.bookmarks
+code --install-extension jmfirth.vsc-space-block-jumper
