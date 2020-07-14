@@ -3,4 +3,4 @@ npi() {
   npm i -S -E $1 && npm i -D -E @types/$1
 }
 
-# blabla
+alias bs="brew services"
