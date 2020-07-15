@@ -7,16 +7,16 @@ tap "homebrew/cask-fonts"
 cask_args appdir: "/Applications"
 
 # install cli binaries and tools
-brew zsh
-brew httpie
-brew python3
-brew node@12
-brew vim
-brew tmux
-brew grep
-brew ruby
-brew rust
-brew fzf
+brew "zsh"
+brew "httpie"
+brew "python3"
+brew "node"
+brew "vim"
+brew "tmux"
+brew "grep"
+brew "ruby"
+brew "rust"
+brew "fzf"
 
 # install apps
 cask "docker"
@@ -33,6 +33,7 @@ cask "gpg-suite"
 cask "lulu"
 cask "alacritty"
 cask "opera"
+cask "1password"
 
 # Quick Look Plugins (https://github.com/sindresorhus/quick-look-plugins)
 cask "qlcolorcode"
@@ -48,6 +49,6 @@ cask "webpquicklook"
 cask "font-source-code-pro"
 
 # install mac app store apps
-mas "1Password", id: 443987910
 mas "Bear", id: 1091189122
 mas "Messenger", id: 1480068668
+mas "Spark", id: 1176895641
