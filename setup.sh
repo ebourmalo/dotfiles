@@ -32,10 +32,13 @@ vim +PluginInstall +qall
 
 echo "> Setup new shell [5/8]"
 mkdir -p $HOME/.zsh_functions
-cp .config/_alacritty $HOME/.zsh_functions/_alacritty
+cp $(pwd)/config/_alacritty $HOME/.zsh_functions/_alacritty
 ln -sv $(pwd)/config/.alacritty.yml ~
 ln -sv $(pwd)/config/.tmux.conf ~
 ln -sv $(pwd)/system/.env ~
+ln -sv $(pwd)/system/.alias ~
+# remove the 2 files before symlink
+rm ~/.zshrc ~/.zpreztorc
 ln -sv $(pwd)/system/.zshrc ~
 ln -sv $(pwd)/system/.zpreztorc ~
 # will source other .dotfiles
@@ -49,11 +52,13 @@ ln -sv $(pwd)/system/.gitconfig ~
 
 echo "> Configuring themes and fonts [7/8]"
 # update iTerm2 config
-defaults write -app iTerm 'Custom Color Presets' -dict-add "ayu-dark" "$(cat config/iterm-theme-ayu-dark.itermcolors)"
-~/Library/ApplicationSupport/iTerm2/iterm2env/versions/*/bin/python3 scripts/iterm-set-theme.py
+defaults write com.googlecode.iterm2 'Custom Color Presets' -dict-add "ayu-dark" "$(cat config/iterm-theme-ayu-dark.itermcolors)"
+defaults write com.googlecode.iterm2 EnableAPIServer -bool true
+pip3 install iterm2
+python3 scripts/iterm-set-theme.py
 # update vscode config
 ln -sv $(pwd)/config/vscode-settings.json ~/Library/ApplicationSupport/Code/User/settings.json
 ln -sv $(pwd)/config/vscode-keybindings.json ~/Library/ApplicationSupport/Code/User/keybindings.json
 
 echo "> Setup osx settings [8/8]"
-source install/macosdefaults.sh
+source ./install/macosdefaults.sh
