@@ -62,3 +62,6 @@ ln -sv $(pwd)/config/vscode-keybindings.json ~/Library/ApplicationSupport/Code/U
 
 echo "> Setup osx settings [8/8]"
 source ./install/macosdefaults.sh
+
+echo "> Restarting mac now!"
+sudo shutdown -r now
