@@ -1,6 +1,0 @@
-npi() {
-  command $param1 | $param2
-  npm i -S -E $1 && npm i -D -E @types/$1
-}
-
-alias bs="brew services"
