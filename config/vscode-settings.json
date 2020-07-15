@@ -1,15 +1,29 @@
 {
     "window.zoomLevel": 1,
-    "workbench.colorTheme": "Ayu Mirage",
+    "workbench.colorTheme": "Ayu Mirage Bordered",
     "editor.fontFamily": "'Source Code Pro', Menlo, Monaco, 'Courier New', monospace",
     "editor.minimap.enabled": false,
     "editor.tabSize": 2,
     "eslint.alwaysShowStatus": true,
     "eslint.format.enable": true,
     "eslint.codeAction.showDocumentation": {},
+    "eslint.validate": [
+        "javascript",
+        "html",
+        "svelte"
+    ],
+    // "files.associations": {
+    //   "*.svelte": "html"
+    // },
+    "svelte.plugin.typescript.enable": false,
+    // "svelte.plugin.svelte.format.enable": false,
+    // "eslint.workingDirectories": ["./src"],
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
     "editor.fontSize": 11.5,
-    "files.autoSave": "onWindowChange"
+    "files.autoSave": "onWindowChange",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "autoimport.useSemiColon": false
 }
